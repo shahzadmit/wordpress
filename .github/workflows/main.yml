@@ -1,16 +1,18 @@
 on: push
-name: 🚀 Deploy website on push
-jobs:
-  web-deploy:
-    name: 🎉 Deploy
+jobs: 
+  web-deploy: 
+    name: "🎉 Deploy"
     runs-on: ubuntu-latest
-    steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v2
-    
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.2
-      with:
-        server: 192.185.5.83
-        username: noiresol
-        password: ${{ secrets.PASSWORD_SECRET }}
+    steps: 
+      - 
+        name: "🚚 Get latest code"
+        uses: actions/checkout@v2
+      - 
+        name: "📂 Sync files"
+        uses: SamKirkland/FTP-Deploy-Action@4.3.2
+        with: 
+          password: "${{ secrets.PASSWORD_SECRET }}"
+          server: "192.185.5.83"
+          username: noiresol
+name: "🚀 Deploy website on push"
+true: push
