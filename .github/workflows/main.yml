@@ -15,4 +15,3 @@ jobs:
           server: "192.185.5.83"
           username: noiresol
 name: "🚀 Deploy website on push"
-true: push
