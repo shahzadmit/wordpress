@@ -4,8 +4,7 @@ jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
-	path : /home4/noiresol/public_html
-    steps:
+     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
     
@@ -15,3 +14,4 @@ jobs:
         server: 192.185.5.83
         username: noiresol
         password: ${{ secrets.PASSWORD_SECRET }}
+		server-dir : /home4/noiresol/public_html
