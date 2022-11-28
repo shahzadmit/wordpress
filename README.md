@@ -1,2 +1,0 @@
-# wordpress
-test wordpress project
